@@ -213,11 +213,11 @@ def Programmation():
             i=i+1
     workbook.save('Programmation.xlsx')
     
-print(Math(), Reseau(), Programmation(), Web(), Linux(), Telephonie(), Physique(), Francais(), Anglais())
-os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')
-shutil.rmtree('Notes_matieres')
-os.mkdir('Notes_matieres')
-shutil.move('/home/etudiant/PROJETgitHUB_BM/data/Anglais.xlsx', '/home/etudiant/PROJETgitHUB_BM/data/Notes_matieres/' )
+print(Math(), Reseau(), Programmation(), Web(), Linux(), Telephonie(), Physique(), Francais(), Anglais()) #lance les def
+os.chdir('/home/etudiant/PROJETgitHUB_BM/data/') #modifie l'emplacement afin de supprimer un potentiel fichier précédent
+shutil.rmtree('Notes_matieres') #supprime un ancien fichier Notes(pou pouvoir relancer le progtramme)
+os.mkdir('Notes_matieres') #création du fichier pour recenser les notes
+shutil.move('/home/etudiant/PROJETgitHUB_BM/data/Anglais.xlsx', '/home/etudiant/PROJETgitHUB_BM/data/Notes_matieres/' )         #déplace les notes dans le dossier réservé.
 shutil.move('/home/etudiant/PROJETgitHUB_BM/data/Francais.xlsx', '/home/etudiant/PROJETgitHUB_BM/data/Notes_matieres/' )
 shutil.move('/home/etudiant/PROJETgitHUB_BM/data/Math.xlsx', '/home/etudiant/PROJETgitHUB_BM/data/Notes_matieres/' )
 shutil.move('/home/etudiant/PROJETgitHUB_BM/data/Web.xlsx', '/home/etudiant/PROJETgitHUB_BM/data/Notes_matieres/' )
