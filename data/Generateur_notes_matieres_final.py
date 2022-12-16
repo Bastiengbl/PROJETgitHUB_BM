@@ -26,7 +26,19 @@ def notesS1():
 "Se_presenter_sur_Internet.xlsx",
 "Traiter_des_donnees.xlsx",
 "Demarche_Portfolio.xlsx"
-]
+]   
+    #A MODIFIER, PEUT ETRE DÉPLACER LES FICHIERS NOTES APRÈS CREATION. DANS CE CAS SUPPRIMER TOUTES LES LIGNES EN DESSOUS
+    p=str(os.listdir('/home/etudiant/PROJETgitHUB_BM/data/'))
+    if 'notes_S1' in p:
+        shutil.rmtree('/home/etudiant/PROJETgitHUB_BM/data/notes_S1')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')
+        os.mkdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S1')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S1')
+    else:
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')
+        os.mkdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S1')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S1')
+#################################################
     for y in l:
         
         workbook = openpyxl.load_workbook('Nom_Prenom.xlsx') #Ouvre le fichier "Nom_Prenom.xlsx", il est donc possible de modifier les noms des Ã©lÃ¨ves a tout moment.
@@ -78,7 +90,18 @@ def notesS2():
 "Mettre_en_place_une_solution_informatique_pour_l_entreprise.xlsx",
 "Projet_integratif.xlsx",
 "Demarche_Portfolio.xlsx"]
-    
+  ##A MODIFIER, PEUT ETRE DÉPLACER LES FICHIERS NOTES APRÈS CREATION. DANS CE CAS SUPPRIMER TOUTES LES LIGNES EN DESSOUS  
+    o=str(os.listdir('/home/etudiant/PROJETgitHUB_BM/data/'))
+    if 'notes_S2' in o:
+        shutil.rmtree('/home/etudiant/PROJETgitHUB_BM/data/notes_S2')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')
+        os.mkdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S2')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S2')
+    else:
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')
+        os.mkdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S2')
+        os.chdir('/home/etudiant/PROJETgitHUB_BM/data/notes_S2')
+#################################################################
     for y in l:
         
         workbook = openpyxl.load_workbook('Nom_Prenom.xlsx') #Ouvre le fichier "Nom_Prenom.xlsx", il est donc possible de modifier les noms des Ã©lÃ¨ves a tout moment.
