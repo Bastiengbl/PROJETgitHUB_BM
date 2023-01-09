@@ -1,5 +1,7 @@
 import openpyxl
- 
+import os
+import shutil
+
 coefT=100
  
  
@@ -786,7 +788,57 @@ def UE_Moy_T():
     moyenne_totale=round(moyenne_totale,2)
     print(moyenne_totale)
     
-    
+
+
     
 def ultime():
-    
+    l=[]
+    l2=[]
+    lx=[]
+    i=0
+    workbook = openpyxl.load_workbook('Nom_Prenom.xlsx') #Ouvre le fichier "Nom_Prenom.xlsx", il est donc possible de modifier les noms des Ã©lÃ¨ves a tout moment.
+    sheet_ranges = workbook['Feuille']
+    nb_eleve = (sheet_ranges['A2'].value)+1 #Permet de recupÃ©rer le nombre total d'Ã©lÃ¨ves.
+    sheet = workbook.active
+    for row in sheet.iter_rows(min_row = 2, max_row = nb_eleve):
+        cell = row[2]
+        Nom=cell.value
+        l=l+[Nom]
+        lx=lx+[Nom+"_Bulletin.xlsx"]
+        cellule_adjacente = sheet.cell(row=cell.row, column=cell.col_idx -1)
+        l2=l2+[cellule_adjacente.value]
+        
+    for fic in lx:
+        workbook = openpyxl.load_workbook('Relevé.xlsx') #Ouvre le fichier "Nom_Prenom.xlsx", il est donc possible de modifier les noms des Ã©lÃ¨ves a tout moment.
+        sheet_ranges = workbook['Feuille']
+        sheet = workbook.active
+        Nom_=l[i]
+        Moy_UE1_S1=UE1_S1(Nom_)
+        Moy_UE2_S1=UE2_S1(Nom_)
+        Moy_UE3_S1=UE3_S1(Nom_)
+        Moy_UEt_S1=UEt_S1(Nom_)
+        Moy_UE1_S2=UE1_S2(Nom_)
+        Moy_UE2_S2=UE2_S2(Nom_)
+        Moy_UE3_S2=UE3_S2(Nom_)
+        Moy_UEt_S2=UEt_S2(Nom_)
+        Moy_UE=UE(Nom_)
+        sheet.cell(12, 11).value = Moy_UE1_S1
+        sheet.cell(29, 11).value = Moy_UE2_S1
+        sheet.cell(45, 11).value = Moy_UE3_S1
+        sheet.cell(60, 11).value = Moy_UEt_S1
+        sheet.cell(80, 11).value = Moy_UE1_S2
+        sheet.cell(90, 11).value = Moy_UE2_S2
+        sheet.cell(100, 11).value = Moy_UE3_S2
+        sheet.cell(110, 11).value = Moy_UEt_S2
+        sheet.cell(120, 11).value = Moy_UE
+        sheet.cell(5, 6).value = l2[i] +" "+ Nom_
+        workbook.save(fic)
+        i=i+1
+    o=str(os.listdir('/home/etudiant/PROJETgitHUB_BM/data/'))
+    if "Bulletin" in o:
+        shutil.rmtree("Bulletin")
+    os.mkdir('Bulletin')
+    os.chdir('/home/etudiant/PROJETgitHUB_BM/data/')  #déplace les  notes dans un répertoire spécifique
+    for fic in lx:
+        shutil.move('/home/etudiant/PROJETgitHUB_BM/data/'+fic  , '/home/etudiant/PROJETgitHUB_BM/data/Bulletin/')
+        
