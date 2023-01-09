@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to SAE_Traiter_Des_Donnees’s documentation! &#8212; Documentation SAE_Traiter_Des_Donnees </title>
+    <title>Bienvenue sur la documentation de la SAE Traiter Des Données! &#8212; Documentation HOME </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -28,18 +28,99 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="welcome-to-sae-traiter-des-donnees-s-documentation">
-<h1>Welcome to SAE_Traiter_Des_Donnees’s documentation!<a class="headerlink" href="#welcome-to-sae-traiter-des-donnees-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="bienvenue-sur-la-documentation-de-la-sae-traiter-des-donnees">
+<h1>Bienvenue sur la documentation de la SAE Traiter Des Données!<a class="headerlink" href="#bienvenue-sur-la-documentation-de-la-sae-traiter-des-donnees" title="Lien permanent vers ce titre">¶</a></h1>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="menu">
+<h1>Menu:<a class="headerlink" href="#menu" title="Lien permanent vers ce titre">¶</a></h1>
 <ul class="simple">
+<li><p><span class="xref std std-ref">installation</span></p></li>
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Index du module</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Page de recherche</span></a></p></li>
 </ul>
+<div class="section" id="voici-la-documentation-des-modules-python-utilises-dans-les-programmes">
+<h2>Voici la documentation des modules python utilisés dans les programmes:<a class="headerlink" href="#voici-la-documentation-des-modules-python-utilises-dans-les-programmes" title="Lien permanent vers ce titre">¶</a></h2>
+</div>
+<div class="section" id="module-openpyxl">
+<span id="a-propos-du-module-openpyxl"></span><h2>A propos du module openpyxl:<a class="headerlink" href="#module-openpyxl" title="Lien permanent vers ce titre">¶</a></h2>
+<p>openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.</p>
+<p>It was born from lack of existing library to read/write natively from Python the Office Open XML format.</p>
+<p>All kudos to the PHPExcel team as openpyxl was initially based on PHPExcel.</p>
+</div>
+<div class="section" id="module-random">
+<span id="a-propos-du-module-random"></span><h2>A propos du module random:<a class="headerlink" href="#module-random" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Random variable generators.</p>
+<blockquote>
+<div><blockquote>
+<div><p>uniform bytes (values between 0 and 255)</p>
+</div></blockquote>
+<blockquote>
+<div><p>uniform within range</p>
+</div></blockquote>
+<blockquote>
+<div><p>pick random element
+pick random sample
+pick weighted random sample
+generate random permutation</p>
+</div></blockquote>
+<blockquote>
+<div><p>uniform
+triangular
+normal (Gaussian)
+lognormal
+negative exponential
+gamma
+beta
+pareto
+Weibull</p>
+</div></blockquote>
+<blockquote>
+<div><p>circular uniform
+von Mises</p>
+</div></blockquote>
+</div></blockquote>
+<p>General notes on the underlying Mersenne Twister core generator:</p>
+<ul class="simple">
+<li><p>The period is 2**19937-1.</p></li>
+<li><p>It is one of the most extensively tested generators in existence.</p></li>
+<li><p>The random() method is implemented in C, executes in a single Python step,
+and is, therefore, threadsafe.</p></li>
+</ul>
+</div>
+<div class="section" id="module-os">
+<span id="a-propos-du-module-os"></span><h2>A propos du module os:<a class="headerlink" href="#module-os" title="Lien permanent vers ce titre">¶</a></h2>
+<p>OS routines for NT or Posix depending on what system we’re on.</p>
+<dl class="simple">
+<dt>This exports:</dt><dd><ul class="simple">
+<li><p>all functions from posix or nt, e.g. unlink, stat, etc.</p></li>
+<li><p>os.path is either posixpath or ntpath</p></li>
+<li><p>os.name is either “posix” or “nt”</p></li>
+<li><p>os.curdir is a string representing the current directory (always “.”)</p></li>
+<li><p>os.pardir is a string representing the parent directory (always “..”)</p></li>
+<li><p>os.sep is the (or a most common) pathname separator (“/” or “\”)</p></li>
+<li><p>os.extsep is the extension separator (always “.”)</p></li>
+<li><p>os.altsep is the alternate pathname separator (None or “/”)</p></li>
+<li><p>os.pathsep is the component separator used in $PATH etc</p></li>
+<li><p>os.linesep is the line separator in text files (“r” or “n” or “rn”)</p></li>
+<li><p>os.defpath is the default search path for executables</p></li>
+<li><p>os.devnull is the file path of the null device (“/dev/null”, etc.)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Programs that import and use “os” stand a better chance of being
+portable between different platforms.  Of course, they must then
+only use functions that are defined by all platforms (e.g., unlink
+and opendir), and leave all pathname manipulation to os.path
+(e.g., split and join).</p>
+</div>
+<div class="section" id="module-shutil">
+<span id="a-propos-du-module-shutil"></span><h2>A propos du module shutil:<a class="headerlink" href="#module-shutil" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Utility functions for copying and archiving files and directory trees.</p>
+<p>XXX The functions here don’t copy the resource fork or other metadata on Mac.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 
 
@@ -48,7 +129,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">SAE_Traiter_Des_Donnees</a></h1>
+<h1 class="logo"><a href="#">HOME</a></h1>
 
 
 

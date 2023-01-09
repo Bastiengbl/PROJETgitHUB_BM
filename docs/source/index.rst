@@ -1,10 +1,48 @@
-.. SAE_Traiter_Des_Donnees documentation master file, created by
-   sphinx-quickstart on Mon Nov 14 11:48:10 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to SAE_Traiter_Des_Donnees's documentation!
-===================================================
+Bienvenue sur la documentation de la SAE Traiter Des Données!
+=============================================================
+Menu:
+=====
+* :ref:`installation`
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+Voici la documentation des modules python utilisés dans les programmes:
+-----------------------------------------------------------------------
+
+A propos du module openpyxl: 
+----------------------------
+.. automodule:: openpyxl
+     :members: matthias coureau bastien gibel
+     
+     
+openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. 
+
+It was born from lack of existing library to read/write natively from Python the Office Open XML format.
+
+All kudos to the PHPExcel team as openpyxl was initially based on PHPExcel.
+
+
+A propos du module random: 
+--------------------------
+.. automodule:: random
+     :members: matthias coureau bastien gibel
+     
+A propos du module os: 
+-----------------------
+.. automodule:: os
+     :members: matthias coureau bastien gibel
+
+
+A propos du module shutil: 
+--------------------------
+.. automodule:: shutil
+     :members: matthias coureau bastien gibel     
+
+
+
 
 .. toctree::
    :maxdepth: 2
@@ -12,9 +50,3 @@ Welcome to SAE_Traiter_Des_Donnees's documentation!
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
