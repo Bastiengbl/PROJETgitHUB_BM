@@ -814,6 +814,7 @@ def ultime():
         sheet = workbook.active
         Nom_=l[i]
         Moy_UE1_S1=UE1_S1(Nom_)
+        #S1
         if Moy_UE1_S1 >=10.0:                 #définit si l'élève a obtenu son UE ou non
             sheet.cell(29, 7).value = "Validé"
         else :
@@ -830,14 +831,38 @@ def ultime():
             sheet.cell(65, 7).value = "Ajourné"
         Moy_UEt_S1=UEt_S1(Nom_)
         if Moy_UEt_S1 >=10.0:
-            sheet.cell(65, 7).value = "Validé"
+            sheet.cell(68, 7).value = "Validé"
         else :
-            sheet.cell(65, 7).value = "Ajourné"
+            sheet.cell(68, 7).value = "Ajourné"
+            
+        #S2    
         Moy_UE1_S2=UE1_S2(Nom_)
+        if Moy_UE1_S2 >=10.0:
+            sheet.cell(97, 7).value = "Validé"
+        else :
+            sheet.cell(97, 7).value = "Ajourné"
         Moy_UE2_S2=UE2_S2(Nom_)
+        if Moy_UE2_S2 >=10.0:
+            sheet.cell(116, 7).value = "Validé"
+        else :
+            sheet.cell(116, 7).value = "Ajourné"
         Moy_UE3_S2=UE3_S2(Nom_)
+        if Moy_UE3_S2 >=10.0:
+            sheet.cell(136, 7).value = "Validé"
+        else :
+            sheet.cell(136, 7).value = "Ajourné"
         Moy_UEt_S2=UEt_S2(Nom_)
+        if Moy_UEt_S2 >=10.0:
+            sheet.cell(139, 7).value = "Validé"
+        else :
+            sheet.cell(139, 7).value = "Ajourné"
         Moy_UE=UE(Nom_)
+        if Moy_UE >=10.0:
+            sheet.cell(144, 6).value = "Décision du jury: Passage en seconde année"
+        else :
+            sheet.cell(144, 6).value = "Décision du jury: Redoublement"
+        
+        
         sheet.cell(28, 7).value = Moy_UE1_S1 #rentre les moyennes dans le bulletin de l'élève
         sheet.cell(46, 7).value = Moy_UE2_S1
         sheet.cell(64, 7).value = Moy_UE3_S1
