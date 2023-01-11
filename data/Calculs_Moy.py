@@ -814,23 +814,39 @@ def ultime():
         sheet = workbook.active
         Nom_=l[i]
         Moy_UE1_S1=UE1_S1(Nom_)
+        if Moy_UE1_S1 >=10.0:                 #définit si l'élève a obtenu son UE ou non
+            sheet.cell(29, 7).value = "Validé"
+        else :
+            sheet.cell(29, 7).value = "Ajourné"
         Moy_UE2_S1=UE2_S1(Nom_)
+        if Moy_UE2_S1 >=10.0:
+            sheet.cell(47, 7).value = "Validé"
+        else :
+            sheet.cell(47, 7).value = "Ajourné"  
         Moy_UE3_S1=UE3_S1(Nom_)
+        if Moy_UE3_S1 >=10.0:
+            sheet.cell(65, 7).value = "Validé"
+        else :
+            sheet.cell(65, 7).value = "Ajourné"
         Moy_UEt_S1=UEt_S1(Nom_)
+        if Moy_UEt_S1 >=10.0:
+            sheet.cell(65, 7).value = "Validé"
+        else :
+            sheet.cell(65, 7).value = "Ajourné"
         Moy_UE1_S2=UE1_S2(Nom_)
         Moy_UE2_S2=UE2_S2(Nom_)
         Moy_UE3_S2=UE3_S2(Nom_)
         Moy_UEt_S2=UEt_S2(Nom_)
         Moy_UE=UE(Nom_)
-        sheet.cell(12, 11).value = Moy_UE1_S1
-        sheet.cell(29, 11).value = Moy_UE2_S1
-        sheet.cell(45, 11).value = Moy_UE3_S1
-        sheet.cell(60, 11).value = Moy_UEt_S1
-        sheet.cell(80, 11).value = Moy_UE1_S2
-        sheet.cell(90, 11).value = Moy_UE2_S2
-        sheet.cell(100, 11).value = Moy_UE3_S2
-        sheet.cell(110, 11).value = Moy_UEt_S2
-        sheet.cell(120, 11).value = Moy_UE
+        sheet.cell(28, 7).value = Moy_UE1_S1 #rentre les moyennes dans le bulletin de l'élève
+        sheet.cell(46, 7).value = Moy_UE2_S1
+        sheet.cell(64, 7).value = Moy_UE3_S1
+        sheet.cell(67, 7).value = Moy_UEt_S1
+        sheet.cell(96, 7).value = Moy_UE1_S2
+        sheet.cell(115, 7).value = Moy_UE2_S2
+        sheet.cell(135, 7).value = Moy_UE3_S2
+        sheet.cell(139, 7).value = Moy_UEt_S2
+        sheet.cell(120, 7).value = Moy_UE
         sheet.cell(5, 6).value = l2[i] +" "+ Nom_
         workbook.save(fic)
         i=i+1
