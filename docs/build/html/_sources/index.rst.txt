@@ -32,9 +32,20 @@ Usage
 
     $ python3 ./main.py --input file <file> --output_dir <dir>
     
-Pour pouvoir lancer le programme principal afin de generer les bulletins des eleves, il vous faudra lancer le programme
+1. Pour pouvoir lancer le programme principal afin de generer les bulletins des eleves, il vous faudra lancer le programme
 'main.py' situe dans PROJETgitHUB/data
 
+2. Pour ce faire vous pouvez lancer le programme dans le terminal avec la commande suivante:
+
+.. code-block:: bash
+
+    $ ./path/to/file/main.py
+
+3. Vous pouvez eventuellement changer les droits sur le fichier si vous ne pouvez pas le lancer:
+
+.. code-block:: bash
+
+    $ chmod a+x /path/to/file/main.py
 
 
 
