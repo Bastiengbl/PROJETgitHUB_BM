@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Diagramme de Gantt Bastien Matthias" company="" webLink="http://" view-date="2022-11-09" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description>
+        <![CDATA[Diagramme de Gantt du projet final SAE Traiter Des Données]]>
+    </description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#ff99cc #f4f4f4 #00cccc #66ff66 #cc00cc #ff6666 #666600 #0000ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Planification du projet" color="#666600" meeting="false" start="2022-11-14" duration="4" complete="0" thirdDate="2022-11-03" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Définition de l'équipe" color="#66ff66" meeting="false" start="2022-11-18" duration="2" complete="0" thirdDate="2022-11-18" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Répartition du travail" color="#0000ff" meeting="false" start="2022-11-22" duration="5" complete="0" thirdDate="2023-01-30" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Organisation du développement" color="#8cb6ce" meeting="false" start="2022-11-29" duration="10" complete="0" thirdDate="2022-10-27" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Début du développement des programmes python" color="#ff6666" meeting="false" start="2022-12-13" duration="20" complete="0" thirdDate="2022-12-05" thirdDate-constraint="0" priority="4" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Association des programmes pour le former un bulletin d'élève avec des notes aléatoires" color="#cc00cc" meeting="false" start="2023-01-10" duration="2" complete="0" thirdDate="2023-01-02" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Début de la documentation Sphynx" color="#f4f4f4" meeting="false" start="2023-01-12" duration="1" complete="0" thirdDate="2022-12-30" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="Finalisation du site hébergeur" color="#ff99cc" meeting="false" start="2023-01-13" duration="2" complete="0" thirdDate="2023-01-09" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Matthias Coureau" function="Default:1" contacts="matt.clic@gmail.com" phone="06 71 14 49 47">
+            <rate name="standard" value="3"/>
+        </resource>
+        <resource id="1" name="Bastien Gibel" function="1" contacts="gibelbastien@gmail.com" phone="06 03 97 28 96">
+            <rate name="standard" value="2"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Développeur expérimenté"/>
+    </roles>
+</project>
