@@ -37,9 +37,9 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Bienvenue sur la documentation de la SAE Traiter Des Données!</a></li>
 <li><a class="reference internal" href="#menu">Menu:</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#voici-la-documentation-des-modules-python-utilises-dans-les-programmes">Voici la documentation des modules python utilisés dans les programmes:</a></li>
 <li><a class="reference internal" href="#module-openpyxl">A propos du module openpyxl:</a></li>
-<li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#module-random">A propos du module random:</a></li>
 <li><a class="reference internal" href="#module-os">A propos du module os:</a></li>
 <li><a class="reference internal" href="#module-shutil">A propos du module shutil:</a></li>
@@ -82,24 +82,17 @@
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Index du module</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Page de recherche</span></a></p></li>
 </ul>
-<div class="section" id="voici-la-documentation-des-modules-python-utilises-dans-les-programmes">
-<h2>Voici la documentation des modules python utilisés dans les programmes:<a class="headerlink" href="#voici-la-documentation-des-modules-python-utilises-dans-les-programmes" title="Lien permanent vers ce titre">¶</a></h2>
-</div>
-<div class="section" id="module-openpyxl">
-<span id="a-propos-du-module-openpyxl"></span><h2>A propos du module openpyxl:<a class="headerlink" href="#module-openpyxl" title="Lien permanent vers ce titre">¶</a></h2>
-<p>openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.</p>
-<p>It was born from lack of existing library to read/write natively from Python the Office Open XML format.</p>
-<p>All kudos to the PHPExcel team as openpyxl was initially based on PHPExcel.</p>
-</div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python3 ./main.py --input file &lt;file&gt; --output_dir &lt;dir&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python3 ./main.py
 </pre></div>
 </div>
+<p>ATTENTION, le code ayant ete redige avec des chemins absolus, le programme ne marchera pas si vous n’etes pas place dans un repertoire sous la forme  “/home/etudiant/
+Les codes etant dependants les uns des autres, il est conseille de ne pas bouger un fichier d’un repertoire ? un autre.</p>
 <p>1. Pour pouvoir lancer le programme principal afin de generer les bulletins des eleves, il vous faudra lancer le programme
 “main.py” situe dans PROJETgitHUB/data</p>
 <ol class="arabic simple" start="2">
-<li><p>Pour ce faire vous pouvez lancer le programme dans le terminal avec la commande suivante:</p></li>
+<li><p>Pour ce faire vous pouvez lancer le programme dans le terminal linux avec la commande suivante:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./path/to/file/main.py
 </pre></div>
@@ -110,6 +103,23 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ chmod a+x /path/to/file/main.py
 </pre></div>
 </div>
+<ol class="arabic simple" start="4">
+<li><p>Si les erreurs persistent et que vous ne pouvez pas lancer le fichier, ouvrez le fichier main.py et lancez le programme depuis le terminal python.</p></li>
+</ol>
+<dl class="simple">
+<dt>En cas de probleme veuillez nous contacter ci-dessous:</dt><dd><p><a class="reference external" href="mailto:'bastien&#46;gibel&#37;&#52;&#48;etu&#46;univ-poitiers&#46;fr">“bastien<span>&#46;</span>gibel<span>&#64;</span>etu<span>&#46;</span>univ-poitiers<span>&#46;</span>fr</a>”
+<a class="reference external" href="mailto:'matthias&#46;coureau&#37;&#52;&#48;etu&#46;univ-poitiers&#46;fr">“matthias<span>&#46;</span>coureau<span>&#64;</span>etu<span>&#46;</span>univ-poitiers<span>&#46;</span>fr</a>”</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="voici-la-documentation-des-modules-python-utilises-dans-les-programmes">
+<h2>Voici la documentation des modules python utilisés dans les programmes:<a class="headerlink" href="#voici-la-documentation-des-modules-python-utilises-dans-les-programmes" title="Lien permanent vers ce titre">¶</a></h2>
+</div>
+<div class="section" id="module-openpyxl">
+<span id="a-propos-du-module-openpyxl"></span><h2>A propos du module openpyxl:<a class="headerlink" href="#module-openpyxl" title="Lien permanent vers ce titre">¶</a></h2>
+<p>openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.</p>
+<p>It was born from lack of existing library to read/write natively from Python the Office Open XML format.</p>
+<p>All kudos to the PHPExcel team as openpyxl was initially based on PHPExcel.</p>
 </div>
 <div class="section" id="module-random">
 <span id="a-propos-du-module-random"></span><h2>A propos du module random:<a class="headerlink" href="#module-random" title="Lien permanent vers ce titre">¶</a></h2>
