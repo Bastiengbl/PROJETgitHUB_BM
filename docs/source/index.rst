@@ -46,6 +46,9 @@ Les codes etant dependants les uns des autres, il est conseille de ne pas bouger
 4. Si les erreurs persistent et que vous ne pouvez pas lancer le fichier, ouvrez le fichier main.py et lancez le programme depuis le terminal python.
 
 
+
+5. Pour visualiser les résultats, accedez au dossier data/ puis Bulletin/ pour les bulletins des eleves.
+Si vous souhaitez acceder seulement aux notes des eleves, accedez au dossier data/ puis notes_S1 et S2.
 En cas de probleme veuillez nous contacter ci-dessous:
    'bastien.gibel@etu.univ-poitiers.fr'
    'matthias.coureau@etu.univ-poitiers.fr'
