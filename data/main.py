@@ -4,7 +4,6 @@ import webbrowser
 
 
 def launcher():
-    webbrowser.open_new_tab('/home/etudiant/PROJETgitHUB_BM/docs/build/html/resultat.html') #ouvre une page de présentation générique de résultat
     webbrowser.open_new_tab('/home/etudiant/PROJETgitHUB_BM/docs/build/html/index.html') #ouvre la page de documentation de la SAE
     sys.stdout.write("Veuillez patienter pendant que le programme génère les bulletins..") #
     ultime()
